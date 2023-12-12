@@ -7,5 +7,5 @@ class JobApplication(BaseModel):
     company_name = models.CharField(max_length=100)
     position = models.CharField(max_length=250)
     link = models.URLField()
-    description = models.CharField(max_length=50, null=True)
+    description = models.TextField(null=True)
     application_date = models.DateField(auto_now_add=True, editable=True)

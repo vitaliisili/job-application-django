@@ -1,6 +1,6 @@
 from rest_framework import permissions
 
-class JobApplicationPermissions(permissions.BasePermissions):
+class JobApplicationPermissions(permissions.BasePermission):
     
     def has_permissions(self, request, view):
         if view.action in ['list', 'retrieve', 'destroy', 'update', 'partial_update', 'create']:
