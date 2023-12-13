@@ -17,7 +17,9 @@ ALLOWED_HOSTS = env.str('DJANGO_ALLOWED_HOSTS', '').split(',')
 CSRF_TRUSTED_ORIGINS = env.str('CSRF_TRUSTED_ORIGINS').split(',')
 
 CUSTOM_APPS = [
-    'apps.user'
+    'apps.user',
+    'apps.core',
+    'apps.job',
 ]
 
 THIRD_PARTY_APPS = [
